@@ -1,10 +1,10 @@
 /**ES6 having some */ 
-import dotenv from 'dotenv';
-import express from 'express';
+const dotenv = require('dotenv');
+const express= require ('express');
 const app = express()
 //External files imported to server backend
-import initWebRoutes from './route/web.js'
-import configViewEngine from './config/viewEngine.js'
+const initWebRoutes= require( './route/web.js')
+const configViewEngine= require( './config/viewEngine.js')
 configViewEngine(app);
 
 //Call dotenv after app-express
