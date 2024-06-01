@@ -2,5 +2,8 @@ const homePage =(req, res) => {
     return res.render('home.ejs')
 }
 
-// export default homePage
-module.exports = {homePage}
+const welcome =(req, res) => {
+    return res.send('Hello world')
+}
+
+export {homePage, welcome}
